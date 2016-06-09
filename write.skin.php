@@ -117,7 +117,7 @@ var g4_is_category = "<?php if($is_category) echo 'true'; ?>";
 					<?
 						for($i = 66; $i < 139; $i++){
 							if(floor($i/6) < 10) {	$hour = "0".floor($i/6); } else { $hour = floor($i/6); }
-							if($i%6 != 0) { $min = ($i%6) * 10; } else { $min = "00"; }
+							if( $i%6 == 3 ) { $min = ($i%6) * 10; } else { $min = "00"; }
 							$time = $hour.":".$min;
 					?>
 						<option value="<?=$time?>" <?if($write[wr_4]==$time) echo " selected"?>><?=$time?></option>
