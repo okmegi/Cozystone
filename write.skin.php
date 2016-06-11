@@ -98,7 +98,7 @@ var g4_is_category = "<?php if($is_category) echo 'true'; ?>";
 			<tr>
 				<td class="title">예정기간</p>(기본 2시간) <img src="<?php echo $board_skin_path; ?>/img/i_required.gif" alt="" /></td>
 				<td class="field">
-					<input type="text" name="wr_1" id="wr_1" value="<?=$write[wr_1]?>" size="15" onclick="popUpCalendar(this, wr_1, 'yyyy.mm.dd')" readonly>
+					<input type="text" name="wr_1" id="wr_1" value="<?=$write[wr_1]?>" size="15" onclick="popUpCalendar(this, wr_1, 'yyyy.mm.dd')", readonly>
 					<select id="wr_2" name="wr_2" itemname="시작시간" required="required"><option value="">시간선택</option>
 					<?
 						for($i = 54; $i < 127; $i++){
