@@ -101,7 +101,7 @@ var g4_is_category = "<?php if($is_category) echo 'true'; ?>";
 					<input type="text" name="wr_1" id="wr_1" value="<?=$write[wr_1]?>" size="15" onclick="popUpCalendar(this, wr_1, 'yyyy.mm.dd')" readonly>
 					<select id="wr_2" name="wr_2" itemname="시작시간" required="required"><option value="">시간선택</option>
 					<?
-						for($i = 54; $i < 127; $i++){
+						for($i = 54; $i < 127; $i=$i+3){
 							if(floor($i/6) < 10) {	$hour = "0".floor($i/6); } else { $hour = floor($i/6); }
 							if($i%6 != 0) { $min = ($i%6) * 10; } else { $min = "00"; }
 							$time = $hour.":".$min;
@@ -115,7 +115,7 @@ var g4_is_category = "<?php if($is_category) echo 'true'; ?>";
 					<input type="text" name="wr_3" id="wr_3" value="<?=$write[wr_3]?>" size="15" onclick="popUpCalendar(this, wr_3, 'yyyy.mm.dd')" readonly>
 					<select id="wr_4" name="wr_4" itemname="종료시간" required="required"><option value="">시간선택</option>
 					<?
-						for($i = 66; $i < 139; $i++){
+						for($i = 66; $i < 139; $i=$i+3){
 							if(floor($i/6) < 10) {	$hour = "0".floor($i/6); } else { $hour = floor($i/6); }
 							if($i%6 != 0) { $min = ($i%6) * 10; } else { $min = "00"; }
 							$time = $hour.":".$min;
