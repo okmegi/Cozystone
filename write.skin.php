@@ -104,9 +104,9 @@ var g4_is_category = "<?php if($is_category) echo 'true'; ?>";
 						for($i = 54; $i < 127; $i++){
 							if(floor($i/6) < 10) {	$hour = "0".floor($i/6); } else { $hour = floor($i/6); }
 							if( $i%6 == 3 ) { $min = ($i%6) * 10; } else if( $i%6 == 0 ) { $min = "00"; }
-							if( ($i%6 == 3)||($i%6 == 0) ) {$time = $hour.":".$min; 
+							if( ($i%6 == 3)||($i%6 == 0) ) { $time = $hour.":".$min; }
 					?>
-						<option value="<?=$time?>" <?if($write[wr_2]==$time) echo " selected"?>><?=$time?></option> }
+						<option value="<?=$time?>" <?if($write[wr_2]==$time) echo " selected"?>><?=$time?></option>
 					<?
 						}
 					?>
